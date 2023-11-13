@@ -5,10 +5,9 @@
 This repository contains implementations and analysis of the LeNet-5 architecture and a custom Convolutional Neural Network (CNN) model for image classification. The models are trained and evaluated on the CIFAR-10 dataset.
 
 ## LeNet-5 Architecture
+![fig 1.0](neural_network_implementations\lenet-5\md_images\lenet-5_original_details.jpeg) ![fig 1.1](neural_network_implementations\lenet-5\md_images\lenet-5_original_visual.jpeg)
 
 The original **LeNet-5** model, proposed by Yann LeCun and his colleagues, was designed for grayscale images of size (32, 32, 1) to tackle the MNIST dataset. The architecture involves convolutional layers, max-pooling, and fully connected layers. It played a pivotal role in the development of convolutional neural networks.
-
-![Image 1](\md_images\lenet-5_original_details.jpeg) ![Image 2](\md_images\lenet-5_original_visual.jpeg)
 
 ## Custom CNN Model
 
