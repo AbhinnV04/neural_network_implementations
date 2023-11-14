@@ -15,10 +15,8 @@ The repository includes implementations of several renowned neural network archi
 
 ## Getting Started
 1. Explore the Implementations:
-<br>
 Navigate to each architecture's directory (e.g., lenet5/, alexnet/) to find the implementation details.
 <br>
 2. Understand the Code:
-<br>
 Dive into the source code of each implementation to grasp the architecture and its components.
 s
