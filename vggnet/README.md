@@ -7,7 +7,7 @@ Welcome to the VGGNet implementation! This repository contains the code for impl
 
 VGGNet is a convolutional neural network architecture known for its simplicity and effectiveness. The implementation includes both a standalone version created from scratch and a transfer learning version using a pre-trained VGG-16 model.
 
-![fig 1.0](https://www.researchgate.net/publication/333242381/figure/fig2/AS:760979981860866@1558443174380/VGGNet-architecture-19.ppm)
+![fig 1.0](https://media.geeksforgeeks.org/wp-content/uploads/20200219152207/new41.jpg)
 
 ### Code Overview
 
@@ -19,7 +19,7 @@ The implementation is organized into two main parts:
     - Creates the VGG-16 model using these blocks with a specified input shape.
     - Provides a summary of the model architecture.
 
-   ```python
+```python
 def add_conv_block(model, filters, num_layers=2):
     for _ in range(num_layers):
         model.add(Conv2D(filters, 3, activation='relu', padding='same'))
@@ -54,7 +54,7 @@ def vgg_16_model(input_shape=(200, 200, 3)):
 
 model = vgg_16_model()
 model.summary()
-   ```
+```
 
    | Layer (type)               | Output Shape            | Param #    |
 |----------------------------|-------------------------|------------|
@@ -87,7 +87,7 @@ model.summary()
     - Freezes the weights of the pre-trained layers and adds custom fully connected layers for a specific task (binary classification).
     - Compiles the model and provides a summary.
 
-   ```python
+```python
 base_model = VGG16(weights='imagenet', include_top=False, input_shape=(200, 200, 3))
 
 for layer in base_model.layers:
@@ -100,7 +100,7 @@ model_2 = Sequential([
     Dense(1, activation='sigmoid')  
 ])
 
-   ```
+```
 
 | Layer (type)               | Output Shape            | Param #    |
 |----------------------------|-------------------------|------------|
@@ -130,8 +130,3 @@ model_2 = Sequential([
 ## Acknowledgments
 
 - This implementation is inspired by the original VGGNet paper: [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556).
-
-Feel free to explore, learn, and contribute to this educational project!
-```
-
-This template provides a basic structure that you can expand upon with additional details, instructions, or acknowledgments as needed.
